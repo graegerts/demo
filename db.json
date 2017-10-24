@@ -1,14 +1,77 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "accounts": {
+        "groups": [
+            {"id": 0, "name": "Administrators", "role": "admin", "members": [0]},
+            {"id": 1, "name": "Members", "role": "contribute", "members": [1, 2]},
+            {"id": 2, "name": "Viewers", "role": "read", "members": []}
+        ],
+        "users": [
+            {"id": 0, "login": "steve", "fullname": "Steve Graegert", "email": "stv@grgrt.com", "password": "", "comment": ""},
+            {"id": 1, "login": "jane", "fullname": "Jane Miller", "email": "jane@example.com", "password": "", "comment": ""},
+            {"id": 2, "login": "john", "fullname": "John Dole", "email": "john@example.com", "password": "", "comment": ""}
+        ]
+    },
+    "data": {
+        "products": [
+            {"id": 0, "moniker": "PRD-0", "title": "ACME App", "description": "",
+                "strategy": { "id": 0,
+                    "vision": { "statement": "", "mission": ""},
+                    "businessmodels": [
+                        { "id": 0, "keyresources": [], "keyactivities": [], "keypartners": [], "customers": [], "valueproposition": [], "revenuestreams": [], "coststructures": [], "channels": [], "relationships": [] },
+                        { "id": 1, "keyresources": [], "keyactivities": [], "keypartners": [], "customers": [], "valueproposition": [], "revenuestreams": [], "coststructures": [], "channels": [], "relationships": [] },
+                        { "id": 2, "keyresources": [], "keyactivities": [], "keypartners": [], "customers": [], "valueproposition": [], "revenuestreams": [], "coststructures": [], "channels": [], "relationships": [] }
+                    ],
+                    "personas": [
+                        {"id": 0, "name": "", "age": "", "education": ""},
+                        {"id": 1, "name": "", "age": "", "education": ""},
+                        {"id": 2, "name": "", "age": "", "education": ""},
+                        {"id": 4, "name": "", "age": "", "education": ""}
+                    ],
+                    "competitors": [
+                        {"id": 0, "companyname": "", "competencies": [], "growthrate": ""},
+                        {"id": 1, "companyname": "", "competencies": [], "growthrate": ""}
+                    ]
+                },
+                "goals": [
+                    {"id": 0, "title": "", "description": [], "keymetrics": [], "tasks": []},
+                    {"id": 1, "title": "", "description": [], "keymetrics": [], "tasks": []},
+                    {"id": 2, "title": "", "description": [], "keymetrics": [], "tasks": []}
+                ],
+                "initiatives": [
+                    {"id": 0, "objective": "", "details": "", "owner": 1},
+                    {"id": 1, "objective": "", "details": "", "owner": 0}
+                ]
+            },
+            {"id": 1, "moniker": "PRD-1", "title": "Perpetuum Mobile", "description": "",
+                "strategy": { "id": 0,
+                    "vision": { "statement": "", "mission": ""},
+                    "businessmodels": [
+                        { "id": 0, "keyresources": [], "keyactivities": [], "keypartners": [], "customers": [], "valueproposition": [], "revenuestreams": [], "coststructures": [], "channels": [], "relationships": [] },
+                        { "id": 1, "keyresources": [], "keyactivities": [], "keypartners": [], "customers": [], "valueproposition": [], "revenuestreams": [], "coststructures": [], "channels": [], "relationships": [] },
+                        { "id": 2, "keyresources": [], "keyactivities": [], "keypartners": [], "customers": [], "valueproposition": [], "revenuestreams": [], "coststructures": [], "channels": [], "relationships": [] }
+                    ],
+                    "personas": [
+                        {"id": 0, "name": "", "age": "", "education": ""},
+                        {"id": 1, "name": "", "age": "", "education": ""},
+                        {"id": 2, "name": "", "age": "", "education": ""},
+                        {"id": 4, "name": "", "age": "", "education": ""}
+                    ],
+                    "competitors": [
+                        {"id": 0, "companyname": "", "competencies": [], "growthrate": ""},
+                        {"id": 1, "companyname": "", "competencies": [], "growthrate": ""}
+                    ]
+                },
+                "goals": [
+                    {"id": 0, "title": "", "description": [], "keymetrics": [], "tasks": []},
+                    {"id": 1, "title": "", "description": [], "keymetrics": [], "tasks": []},
+                    {"id": 2, "title": "", "description": [], "keymetrics": [], "tasks": []}
+                ],
+                "initiatives": [
+                    {"id": 0, "objective": "", "details": "", "owner": 1},
+                    {"id": 1, "objective": "", "details": "", "owner": 0}
+                ]
+            }
+        ]
+    },
+    "config": { "timezone": "UTC+1", "languages": ["en-US", "de-DE"] }
 }
